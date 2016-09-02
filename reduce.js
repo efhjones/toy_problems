@@ -241,6 +241,20 @@ var myObj = {three: 3, four: 4, one: 1, five: 5, two: 2};
 getMin(myArray); //=> 1
 getMin(myObj); //=> 1
 
+/* Pluck */
+
+// Create a function that will take in an array of objects and return an array of
+// the values of a certain property in it. 
+// E.g. take an array of people and return an array of just their ages
+
+function pluck(collection, key) {
+  //your code here!
+};
+
+//example: 
+
+var myObjArray = [ {name: 'Harry', age: 33}, {name: 'Ron', age: 32}, {name: 'Hermione', age: 31} ];
+pluck(myObjArray, age); //=> [33, 32, 31]
 
 
 /* Extend */
