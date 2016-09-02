@@ -8,6 +8,13 @@
 //     YOU MAY RE-NAME ANY PARAMETERS AS YOU WISH, 
 //     BUT DO NOT CHANGE THE NUMBER OF PARAMETERS.
 
+/* IMPLEMENT EACH */
+
+function each(collection, callback) {
+  //your code here!  
+}
+
+
 /* IMPLEMENT REDUCE */
 
 //Create a function reduce, that takes in a collection, a callback/accumulator,
@@ -19,6 +26,13 @@
 //Once you're done, use your reduce function to solve the other prompts.
 //If you decide to run your functions, you may need to include an 
 //implementation of each.
+
+function reduce(collection, callback, startValue) {
+  //your code here!
+}
+
+
+
 
 
 /* Sum All numbers */
@@ -130,7 +144,7 @@ onlyAs(differentStrings); //=> 'apple aardvark alaska'
   onlyAs(differentStrings); //> ['apple, aardvark, alaska']
 
 
-/* Make Me Array */
+/* Object Values */
 
 //Create a function, using reduce, that takes in an object 
 //and returns an array with the same values.
@@ -138,7 +152,7 @@ onlyAs(differentStrings); //=> 'apple aardvark alaska'
 //Your function should add only the object's
 //values to the array, not its keys.
 
-function makeMeArray(object) {
+function objectValues(object) {
   //your code here!
 }
 
@@ -148,4 +162,119 @@ var myObj = {0: 'banana', 1: 'grape', 2: 'peach', 3: 'apple', 4: 'pear', 5: 'str
 makeMeArray(myObj); //=> ['banana', 'grape', 'peach', 'apple', 'pear', 'strawberry']
 
 
+/* Every */
 
+//Create a function every that takes in a collection and a predicate function (a callback 
+//function that returns true or false) and returns true if every item in the array
+//passes the predicate function and false otherwise. Use reduce in your implementation.
+
+function every (collection, predicate) {
+
+}
+
+
+//example:
+function greaterThanZero(val) {
+  if (val > 0){
+    return true;
+  }
+  return false;
+}
+
+function isEven(val) {
+  return val % 2 === 0;
+}
+
+var myArray = [1,2,3,4,5];
+
+every(myArray, greaterThanZero); // => true
+every(myArray, isEven); //=> false
+
+
+/* Some */
+
+// Determine whether any of the items in the given array pass a truth
+// test. 
+
+function some(collection, predicate) {
+  // your code here!
+}
+
+//example:
+var otherArray = [-1, -2, -3, -4, -5];
+
+some(myArray, isEven); // => true
+some(otherArray, isEven); // true
+some(otherArray, greaterThanZero); // false
+
+
+
+/* Letter Count */
+
+// Create function letterCount that accepts a string as an argument
+// and returns an object. The object should contain every letter
+// that appears in the string and the number of times each letter
+// appears. Since your implementation
+
+function letterCount(str){
+  //your code here
+}
+
+//example:
+letterCount('abbccc');// => {a: 1, b: 2, c: 3};
+
+/* getMin */ 
+
+//Create a funciton that accepts a collection as its only argument
+//and returns the lowest value in that collection. Your solution should work
+//both with arrays and with the values in objects.
+
+function getMin(collection) {
+  //your code here!
+}
+
+//example:
+
+var myArray = [5,3,1,4,2];
+var myObj = {three: 3, four: 4, one: 1, five: 5, two: 2};
+
+getMin(myArray); //=> 1
+getMin(myObj); //=> 1
+
+
+
+/* Extend */
+
+//Warning, this one is tough!
+//Create a function extend that will take in two objects.
+//The first should be the object you want to extend (or add
+//properites to) and the second object should contain all the 
+//keys and values you want to add to the first object.
+//Warning: You may need to adjust your each and reduce implementation
+//in order to have access to all the keys and values that you need.
+
+
+  var extend = function(thisObj, thatObj) {
+    //your code here!
+  };
+
+
+var obj1 = {hello: 'orange', goodbye: 'blue'};
+var obj2 = {bonjour: 'pink', 'au revoir': 'green'};
+let result = extend(obj1, obj2); 
+  /* => 
+{
+  au revoir: "green", 
+  bonjour: "pink",  
+  goodbye: "blue",  
+  hello: "orange"
+}
+*/
+
+
+//Extra Work:
+
+//If you finish the above problems, check out http://reactivex.io/learnrx/
+//These will prompt you to use the functions that you've been implementing to
+//solve problems. As it only evaluates your work but doesn't help you, it's a greater 
+//way to test your knowledge! 
