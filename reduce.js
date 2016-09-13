@@ -272,13 +272,44 @@ indexOf(myArray, 28); // => -1
 
 /* Difference */
 
-// Take the difference between one array and a number of other arrays.
-// Only the elements present in just the first array will remain.
-// You should try using your implementation of indexOf in your implementation.
+  // Take the difference between one array and a number of other arrays.
+  // Only the elements present in just the first array will remain.
+  // You should try using your implementation of indexOf in your implementation.
+  // You don't need to use reduce in your implementation, but it would
+  // be good practice!
 
-function difference(array1, array2, array3) {
-  //your code here!
-};
+  function difference(array1, array2, array3) {
+    //your code here!
+  };
+
+//example: 
+var array1 = [1,2,3,4,5];
+var array2 = [2,4,5];
+var array3 = [2,3,4];
+
+difference(array1, array2, array3); // => [1], because it is the only unique item among all the arrays.
+
+
+/* Intersection */
+
+  // Takes an arbitrary number of arrays and produces an array that contains
+  // every item shared between all the passed-in arrays.
+  // try to use your indexOf function here as well!
+
+
+  function intersection () {
+    //your code here!
+  };
+
+  //example:
+
+  var array1 = [1,2,3,4,5];
+  var array2 = [2,4,5];
+  var array3 = [2,3,4];
+
+  intersection(array1, array2, array3); // => [2,3,4,5], because these items exist in all the passed in arrays.
+
+  //helpers: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice#Array-like_objects
 
 
 
