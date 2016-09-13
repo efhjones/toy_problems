@@ -2,29 +2,29 @@
 //                                      REDUCE FUNCTIONS                                //
 /****************************************************************************************/
 
-//     YOU SHOULD USE REDUCE 
-//     AT LEAST ONCE IN ALL OF THESE FUNCTIONS! 
+//     YOU SHOULD USE REDUCE
+//     AT LEAST ONCE IN ALL OF THESE FUNCTIONS!
 //     DON'T USE THE ARRAY.PROTOTYPE.REDUCE METHOD
-//     YOU MAY RE-NAME ANY PARAMETERS AS YOU WISH, 
+//     YOU MAY RE-NAME ANY PARAMETERS AS YOU WISH,
 //     BUT DO NOT CHANGE THE NUMBER OF PARAMETERS.
 
 /* IMPLEMENT EACH */
 
 function each(collection, callback) {
-  //your code here!  
+  //your code here!
 }
 
 
 /* IMPLEMENT REDUCE */
 
 //Create a function reduce, that takes in a collection, a callback/accumulator,
-// and a startValue iterates through a collection, setting the startValue 
-// each time to the result of performing a callback/accumulator function 
+// and a startValue iterates through a collection, setting the startValue
+// each time to the result of performing a callback/accumulator function
 // on the startValue and each item in that collection.
-//Your function should be like the one you implemented in your session, 
+//Your function should be like the one you implemented in your session,
 //using each.
 //Once you're done, use your reduce function to solve the other prompts.
-//If you decide to run your functions, you may need to include an 
+//If you decide to run your functions, you may need to include an
 //implementation of each.
 
 function reduce(collection, callback, startValue) {
@@ -59,15 +59,15 @@ sumAllNumbers(numbers); //=> 15
   sumAllNumbers(numberObj); //=> ????
 
 //now, add a startValue to your implementation of your sumAllNumbers function.
-//Try using your function with 10 as its startValue. 
+//Try using your function with 10 as its startValue.
 //Is the result what you expected? Why / why not?
 
 /* Add One More */
 
-//Create a function that, using reduce, will add an incrementing-by-one 
+//Create a function that, using reduce, will add an incrementing-by-one
 //value while it sums up an array.
-//For example, our function should sum all the numbers in an array, 
-//the first time adding one. On subsequent iterations, our 
+//For example, our function should sum all the numbers in an array,
+//the first time adding one. On subsequent iterations, our
 //function should add an extra 2, then 3, then 4, etc.
 
 function addOneMore(collection) {
@@ -78,19 +78,28 @@ function addOneMore(collection) {
   var numbers = [1,2,3,4,5];
   addOneMore(numbers); //=> 25
 
+  //example:
+  var numbers = [1,2,3,4,5];
+//Your reduce function should perform this:
+  //startValue, item, result, incrementValue, final value
+  // 1    +       2    = 3      +     1 =          4
+  // 4    +       3    = 7      +     2 =          9
+  // 9    +       4    = 13     +     3 =          16
+  //16    +       5    = 21     +     4 =          25
+
 /******************************* REDUCING WITH OBJECTS ********************************/
 
-//Reduce's startValue doesn't need to be a number! We can pass almost anything as a 
-// startValue for reduce and make it work! For example, let's look at a use case with an 
-//object: 
+//Reduce's startValue doesn't need to be a number! We can pass almost anything as a
+// startValue for reduce and make it work! For example, let's look at a use case with an
+//object:
 
 function makeMeObj(array){
-  return reduce(array, function(object, item){ // 'object' is really a variable that acts as a 
-                                               // placeholder for our startValue. Since our startValue 
-                                               // is an object, it makes sense to name this parameter 
+  return reduce(array, function(object, item){ // 'object' is really a variable that acts as a
+                                               // placeholder for our startValue. Since our startValue
+                                               // is an object, it makes sense to name this parameter
                                                // 'object'.
     object[item] = true; //this is where we add the key value pair to our object
-    return object; //be sure to return the object (startValue) at the end! 
+    return object; //be sure to return the object (startValue) at the end!
                    //This is how we incrementally add thigs to our object!
   }, {})
 }
@@ -107,7 +116,7 @@ makeMeObj(fruits); //=> {apple: true, pear: true, banana: true, peach: true}
 
 /* Build A String */
 
-//Create a function that will take in an array of letters and, 
+//Create a function that will take in an array of letters and,
 //with an empty string as a startValue, return a string using reduce.
 
 function buildAString(array) {
@@ -124,7 +133,7 @@ buildAString(letters); //=> 'like magic!'
 /* Only A's */
 
 //Create a function that will take in an array of strings, and return a string with only
-//words that start with the letter A. 
+//words that start with the letter A.
 
 function onlyAs(arrayOfStrings) {
   //your code here!
@@ -136,7 +145,7 @@ var differentStrings = ['apple', 'cat', 'aardvark', 'alaska', 'dog', 'banana', '
 
 onlyAs(differentStrings); //=> 'apple aardvark alaska'
 
-  //extra credit: 
+  //extra credit:
   // compose an array of strings that begin with a, rather than a string
 
   //example:
@@ -146,9 +155,9 @@ onlyAs(differentStrings); //=> 'apple aardvark alaska'
 
 /* Object Values */
 
-//Create a function, using reduce, that takes in an object 
+//Create a function, using reduce, that takes in an object
 //and returns an array with the same values.
-//reduce an object to be an array with the same values. 
+//reduce an object to be an array with the same values.
 //Your function should add only the object's
 //values to the array, not its keys.
 
@@ -164,12 +173,12 @@ makeMeArray(myObj); //=> ['banana', 'grape', 'peach', 'apple', 'pear', 'strawber
 
 /* Every */
 
-//Create a function every that takes in a collection and a predicate function (a callback 
+//Create a function every that takes in a collection and a predicate function (a callback
 //function that returns true or false) and returns true if every item in the array
 //passes the predicate function and false otherwise. Use reduce in your implementation.
 
 function every (collection, predicate) {
-
+  //your code here!
 }
 
 
@@ -194,7 +203,7 @@ every(myArray, isEven); //=> false
 /* Some */
 
 // Determine whether any of the items in the given array pass a truth
-// test. 
+// test.
 
 function some(collection, predicate) {
   // your code here!
@@ -223,7 +232,7 @@ function letterCount(str){
 //example:
 letterCount('abbccc');// => {a: 1, b: 2, c: 3};
 
-/* getMin */ 
+/* getMin */
 
 //Create a funciton that accepts a collection as its only argument
 //and returns the lowest value in that collection. Your solution should work
@@ -241,17 +250,49 @@ var myObj = {three: 3, four: 4, one: 1, five: 5, two: 2};
 getMin(myArray); //=> 1
 getMin(myObj); //=> 1
 
+
+/* IndexOf */
+
+//create a function indexOf, that will take in a collection and a 'target' item.
+//It will return the index at which the 'target' item appears.
+//If it does not find the item, it should return -1.
+
+function indexOf(collection, target) {
+  //your code here!
+}
+
+//example:
+
+var myArray = [19, 4, 9, 38, 1];
+
+indexOf(myArray, 9); // => 2
+indexOf(myArray, 28); // => -1
+
+
+
+/* Difference */
+
+// Take the difference between one array and a number of other arrays.
+// Only the elements present in just the first array will remain.
+// You should try using your implementation of indexOf in your implementation.
+
+function difference(array1, array2, array3) {
+  //your code here!
+};
+
+
+
 /* Pluck */
 
 // Create a function that will take in an array of objects and return an array of
-// the values of a certain property in it. 
+// the values of a certain property in it.
 // E.g. take an array of people and return an array of just their ages
 
 function pluck(collection, key) {
   //your code here!
 };
 
-//example: 
+//example:
 
 var myObjArray = [ {name: 'Harry', age: 33}, {name: 'Ron', age: 32}, {name: 'Hermione', age: 31} ];
 pluck(myObjArray, age); //=> [33, 32, 31]
@@ -262,7 +303,7 @@ pluck(myObjArray, age); //=> [33, 32, 31]
 //Warning, this one is tough!
 //Create a function extend that will take in two objects.
 //The first should be the object you want to extend (or add
-//properites to) and the second object should contain all the 
+//properites to) and the second object should contain all the
 //keys and values you want to add to the first object.
 //Warning: You may need to adjust your each and reduce implementation
 //in order to have access to all the keys and values that you need.
@@ -275,12 +316,12 @@ pluck(myObjArray, age); //=> [33, 32, 31]
 
 var obj1 = {hello: 'orange', goodbye: 'blue'};
 var obj2 = {bonjour: 'pink', 'au revoir': 'green'};
-let result = extend(obj1, obj2); 
-  /* => 
+let result = extend(obj1, obj2);
+  /* =>
 {
-  au revoir: "green", 
-  bonjour: "pink",  
-  goodbye: "blue",  
+  au revoir: "green",
+  bonjour: "pink",
+  goodbye: "blue",
   hello: "orange"
 }
 */
@@ -290,5 +331,5 @@ let result = extend(obj1, obj2);
 
 //If you finish the above problems, check out http://reactivex.io/learnrx/
 //These will prompt you to use the functions that you've been implementing to
-//solve problems. As it only evaluates your work but doesn't help you, it's a greater 
-//way to test your knowledge! 
+//solve problems. As it only evaluates your work but doesn't help you, it's a greater
+//way to test your knowledge!
