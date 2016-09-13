@@ -32,9 +32,6 @@ function reduce(collection, callback, startValue) {
 }
 
 
-
-
-
 /* Sum All numbers */
 
 //Create a function sumAllNumbers that takes in a collection and uses reduce to return the
@@ -272,15 +269,15 @@ indexOf(myArray, 28); // => -1
 
 /* Difference */
 
-  // Take the difference between one array and a number of other arrays.
-  // Only the elements present in just the first array will remain.
-  // You should try using your implementation of indexOf in your implementation.
-  // You don't need to use reduce in your implementation, but it would
-  // be good practice!
+// Take the difference between one array and a number of other arrays.
+// Only the elements present in just the first array will remain.
+// You should try using your implementation of indexOf in your implementation.
+// You don't need to use reduce in your implementation, but it would
+// be good practice!
 
-  function difference(array1, array2, array3) {
-    //your code here!
-  };
+function difference(array1, array2, array3) {
+  //your code here!
+};
 
 //example: 
 var array1 = [1,2,3,4,5];
@@ -289,27 +286,52 @@ var array3 = [2,3,4];
 
 difference(array1, array2, array3); // => [1], because it is the only unique item among all the arrays.
 
+/* Flatten */
+
+// Takes a multidimensional array and converts it to a one-dimensional array.
+// The new array should contain all elements of the multidimensional array.
+// You will only receive arrays with one level of subarrays.
+
+function flatten(multiArray) {
+  // your code here!
+}
+
+//example:
+
+var deepArray = [[1,2,3], 4, 5, [6,7,8], 9, [10]] 
+flatten(deepArray); //=> [1,2,3,4,5,6,7,8,9,10]
+
+//extra credit:
+//Make your function recursive! Handle arrays that are nested an unknown number of times.
+
+//example:
+
+var crazyArray = [ [1, [2,3] ], [ 4,5, [6,7, [8] ], 9], [[[10]]]];
+
+flatten(crazyArray); //=> [1,2,3,4,5,6,7,8,9,10]
+
+
 
 /* Intersection */
 
-  // Takes an arbitrary number of arrays and produces an array that contains
-  // every item shared between all the passed-in arrays.
-  // try to use your indexOf function here as well!
+// Takes an arbitrary number of arrays and produces an array that contains
+// every item shared between all the passed-in arrays.
+// try to use your indexOf function here as well!
 
 
-  function intersection () {
-    //your code here!
-  };
+function intersection () {
+  //your code here!
+};
 
-  //example:
+//example:
 
-  var array1 = [1,2,3,4,5];
-  var array2 = [2,4,5];
-  var array3 = [2,3,4];
+var array1 = [1,2,3,4,5];
+var array2 = [2,4,5];
+var array3 = [2,3,4];
 
-  intersection(array1, array2, array3); // => [2,3,4,5], because these items exist in all the passed in arrays.
+intersection(array1, array2, array3); // => [2,3,4,5], because these items exist in all the passed in arrays.
 
-  //helpers: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice#Array-like_objects
+//helpers: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice#Array-like_objects
 
 
 
