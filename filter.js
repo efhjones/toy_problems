@@ -140,3 +140,23 @@ recordAfterF(letters); //=> {'A': 65, 'b': 98, 'c': 99, 'd': 100, 'E': 69}
 
 //Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
 //           http://www.w3schools.com/charsets/ref_html_ascii.asp
+
+
+/* Five Stars */
+
+//Create a function that will use filter to 
+//choose from the given listen of movies,
+//only those movies that received a 5 star rating.
+
+function fiveStars() {
+  //your code here!
+}
+
+// examples:
+
+var movies = [{
+  title: 'Amelie', rating: 5}, 
+  {title: 'Harry Potter', rating: 4},
+   {title: 'Ratatouille', rating: 5}, 
+   {title: 'Die Hard', rating: 2}
+];
