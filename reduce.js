@@ -220,7 +220,8 @@ some(otherArray, greaterThanZero); // false
 // Create function letterCount that accepts a string as an argument
 // and returns an object. The object should contain every letter
 // that appears in the string and the number of times each letter
-// appears. Since your implementation
+// appears. Make sure your implementation of reduce will work 
+// if you pass it a string.
 
 function letterCount(str){
   //your code here
@@ -348,7 +349,7 @@ function pluck(collection, key) {
 //example:
 
 var myObjArray = [ {name: 'Harry', age: 33}, {name: 'Ron', age: 32}, {name: 'Hermione', age: 31} ];
-pluck(myObjArray, age); //=> [33, 32, 31]
+pluck(myObjArray, 'age'); //=> [33, 32, 31]
 
 
 /* Extend */
