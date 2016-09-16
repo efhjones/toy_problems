@@ -17,7 +17,7 @@
 //You should use your map function to complete the rest of the these problems!
 
 
-function map(collection, callbak){
+function map(collection, callback){
   //your code here
 }
 
