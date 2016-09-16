@@ -24,58 +24,57 @@ function filter(collection, callback){
 
 /* Strings With A */
 
-  //Write a function to filter an array of strings, returning only those strings that
-  // start with the letter 'a'. Your function should use the 'filter' function you wrote in our
-  // lessons.
+//Write a function to filter an array of strings, returning only those strings that
+// start with the letter 'a'. Your function should use the 'filter' function you wrote in our
+// lessons.
 
-  function stringsWithA(arrayOfStrings) {
+function stringsWithA(arrayOfStrings) {
 
-  }
+}
 
-  // examples:
+// examples:
 
-  var strings = ['antelope', 'ant', 'cheetah', 'dog', 'wolf', 'ape'];
-  stringsWithA(strings); //=> ['antelope', 'ant', 'ape']
+var strings = ['antelope', 'ant', 'cheetah', 'dog', 'wolf', 'ape'];
+stringsWithA(strings); //=> ['antelope', 'ant', 'ape']
 
 
-  //extra credit:
-    //Make your function capitalize the first letter in each string. 
-    //Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+//extra credit:
+  //Make your function capitalize the first letter in each string. 
+  //Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 
 
 
 
 /* Vowel Strings */
 
-  //Write a function to filter an array of strings and 
-  // return only those strings that start with a vowel.
+//Write a function to filter an array of strings and 
+// return only those strings that start with a vowel.
 
-  function vowelStrings(arrayOfStrings) {
+function vowelStrings(arrayOfStrings) {
 
-  }
+}
 
-  // examples:
+// examples:
 
-  var strings = ['cat', 'pig', 'aardvark', 'bird', 'elephant', 'koala', 'ostrich'];
-  vowelStrings(strings); //=> ['aardvark', 'elephant', 'ostrich']
+var strings = ['cat', 'pig', 'aardvark', 'bird', 'elephant', 'koala', 'ostrich'];
+vowelStrings(strings); //=> ['aardvark', 'elephant', 'ostrich']
 
 
 
 
 /*  Greater Than Three Arrays */
 
-  //Write a function to filter an array of arrays. Your function, given a nested array, should
-  //return only those subarrays whose length is greater than 3.
+//Write a function to filter an array of arrays. Your function, given a nested array, should
+//return only those subarrays whose length is greater than 3.
 
-  function greaterThanThreeArrays(nestedArray) {
+function greaterThanThreeArrays(nestedArray) {
 
-  }
+}
 
-  // examples:
+// examples:
 
-  var arrayOfArrays = [ ['a', 'b', 'c'], [1, 2, 3, 4], [true, true, false, true], ['cat', 'dog', 'fish'] ];
-  greaterThanThreeArrays(arrayOfArrays); //=> [ ['a', 'b', 'c'], ['cat', 'dog', 'fish'] ]
-
+var arrayOfArrays = [ ['a', 'b' ], [1, 2, 3, 4], [true, true, false, true], ['cat', 'dog', 'fish'] ];
+greaterThanThreeArrays(arrayOfArrays); //=> [ [1, 2, 3, 4], [true, true, false, true] ]
 
 
 
