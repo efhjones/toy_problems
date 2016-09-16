@@ -61,7 +61,7 @@ function addPrefix(arrayOfObjects) {
 
 //examples:
 
-var ladiesAndGents = [ {name: 'John', sex: 'male'}, {name: 'Kelly', sex: 'female'}, {name: 'Adam', sex: 'male'}, {name: 'Cathy', sex: 'female'} ];
+var ladiesAndGents = [ {name: 'John', gender: 'male'}, {name: 'Kelly', gender: 'female'}, {name: 'Adam', gender: 'male'}, {name: 'Cathy', gender: 'female'} ];
 addPrefix(ladiesAndGents); //=> ['Mr. John', 'Ms. Kelly', 'Mr. Adam', 'Ms. Cathy']
 
 
@@ -146,7 +146,7 @@ evenAndOdd(numbers); //=> ['odd', 'even', 'odd', 'even', 'odd', 'even'];
   //doubled values
 
 function doubleSubArrays() {
-
+  //your code here!
 }
 
 //examples:
@@ -158,5 +158,22 @@ doubleSubArrays(subArrays); //=> [ [2, 4, 6], [8, 10, 12], [14, 16, 18] ]
   //modify your function so that it accepts subarrays with strings. If the subarray contains a string,
   //add an s to the end of the string. Otherwise, double the number as usual.
 
-  //examples:
+/* Average Age */ 
+
+
+// Create a function that will take in an array of objects
+// Each object will have an age property. You should return 
+// an int of the average ages of all the people.
+
+
+function averageAge(arrayOfObjs) {
+  //your code here!
+}
+
+//example:
+
+var people = [{name: "Liz", age: 35}, {name: "Jack", age: 55}, {name: "Kenneth", age: 30}, {name: "Tracy", age: 36}];
+var result = averageAge(people);
+console.log(result); //=> 39
+
   
