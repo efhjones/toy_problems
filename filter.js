@@ -148,7 +148,7 @@ recordAfterF(letters); //=> {'A': 65, 'b': 98, 'c': 99, 'd': 100, 'E': 69}
 //choose from the given listen of movies,
 //only those movies that received a 5 star rating.
 
-function fiveStars() {
+function fiveStars(array) {
   //your code here!
 }
 
@@ -160,3 +160,5 @@ var movies = [{
    {title: 'Ratatouille', rating: 5}, 
    {title: 'Die Hard', rating: 2}
 ];
+
+fiveStars(movies);//=> ['Amelie', 'Ratatouille']
