@@ -18,7 +18,7 @@
 //You should use your filter function to complete the rest of the these problems!
 
 function filter(collection, callback){
-  //your code
+  //your code here!
 }
 
 
@@ -29,7 +29,7 @@ function filter(collection, callback){
 // lessons.
 
 function stringsWithA(arrayOfStrings) {
-
+  //your code here!
 }
 
 // examples:
@@ -51,7 +51,7 @@ stringsWithA(strings); //=> ['antelope', 'ant', 'ape']
 // return only those strings that start with a vowel.
 
 function vowelStrings(arrayOfStrings) {
-
+  //your code here!
 }
 
 // examples:
@@ -68,7 +68,7 @@ vowelStrings(strings); //=> ['aardvark', 'elephant', 'ostrich']
 //return only those subarrays whose length is greater than 3.
 
 function greaterThanThreeArrays(nestedArray) {
-
+  //your code here!
 }
 
 // examples:
@@ -86,7 +86,7 @@ greaterThanThreeArrays(arrayOfArrays); //=> [ [1, 2, 3, 4], [true, true, false, 
 // be the one you created in our lessons, NOT the Array.prototype.map method.
 
 function doubleEvens (numberArray) {
-
+  //your code here!
 }
 
 // examples: 
@@ -110,7 +110,7 @@ doubleEvens(numbers); //=> [4, 8, 12]
 
 
 function filterReduce(array) {
-
+  //your code here!
 }
 
 var crazyNums = [1, 1.3, 2, 3, 4, 4.4, 5, 5.9];
@@ -129,7 +129,7 @@ filterReduce(crazyNums); //=> after the filter function: [1, 2, 3, 4, 5]
 // The object should have the letter as key, and the charcode as value.
 
 function recordAfterF() {
-
+  //your code here!
 }
 
 // examples:

@@ -51,7 +51,7 @@ addS(singles); //=> ['cats', 'birds', 'dogs', 'oranges', 'lemons', 'cakes']
 /* Add Prefix */
 
 //Create a function that, using map, iterates over an array of objects.
-//If that person is a female, prefix 'Ms' to the name.
+//If that person is female, prefix 'Ms' to the name.
 //If that person is male, prefix 'Mr' to the name.
 //Your function should return an array that contains only the names with the added prefix.
 
