@@ -154,11 +154,11 @@ function fiveStars(array) {
 
 // examples:
 
-var movies = [{
-  title: 'Amelie', rating: 5}, 
+var movies = [
+  {title: 'Amelie', rating: 5}, 
   {title: 'Harry Potter', rating: 4},
-   {title: 'Ratatouille', rating: 5}, 
-   {title: 'Die Hard', rating: 2}
+  {title: 'Ratatouille', rating: 5}, 
+  {title: 'Die Hard', rating: 2}
 ];
 
-fiveStars(movies);//=> ['Amelie', 'Ratatouille']
+fiveStars(movies);//=> [{title: 'Amelie', rating: 5}, {title: 'Ratatouille', rating: 5}, ]
