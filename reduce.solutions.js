@@ -29,3 +29,16 @@ var extend = function(thisObj, thatObj) {
     return thisObj;
   }, thisObj)
 };
+
+
+/************ DIFFERENCE ************/
+
+
+function difference(array1, array2, array3) {
+  return reduce(array1, function(array, item){
+    if (array2.indexOf(item) === -1 && array3.indexOf(item) === -1){
+      array.push(item);
+    }
+    return array;
+  }, []);
+};
