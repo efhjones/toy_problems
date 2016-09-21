@@ -149,6 +149,21 @@ onlyAs(differentStrings); //=> 'apple aardvark alaska'
 
   onlyAs(differentStrings); //> ['apple, aardvark, alaska']
 
+/* Only Uniques */ 
+
+// Create a function that, using reduce, takes in a string
+// and produces a string that contains letters that appear 
+// only once in that string.
+
+
+var onlyUniques = function(str) {
+  // your code here!
+}
+
+//example:
+
+onlyUniques('bananas') // => 'bs'
+
 
 /* Object Values */
 
@@ -214,7 +229,6 @@ some(otherArray, isEven); // true
 some(otherArray, greaterThanZero); // false
 
 
-
 /* Letter Count */
 
 // Create function letterCount that accepts a string as an argument
@@ -229,6 +243,7 @@ function letterCount(str){
 
 //example:
 letterCount('abbccc');// => {a: 1, b: 2, c: 3};
+
 
 /* getMin */
 
@@ -287,30 +302,6 @@ var array3 = [2,3,4];
 
 difference(array1, array2, array3); // => [1], because it is the only unique item among all the arrays.
 
-/* Flatten */
-
-// Takes a multidimensional array and converts it to a one-dimensional array.
-// The new array should contain all elements of the multidimensional array.
-// You will only receive arrays with one level of subarrays.
-
-function flatten(multiArray) {
-  // your code here!
-}
-
-//example:
-
-var deepArray = [[1,2,3], 4, 5, [6,7,8], 9, [10]] 
-flatten(deepArray); //=> [1,2,3,4,5,6,7,8,9,10]
-
-//extra credit:
-//Make your function recursive! Handle arrays that are nested an unknown number of times.
-
-//example:
-
-var crazyArray = [ [1, [2,3] ], [ 4,5, [6,7, [8] ], 9], [[[10]]]];
-
-flatten(crazyArray); //=> [1,2,3,4,5,6,7,8,9,10]
-
 
 
 /* Intersection */
@@ -335,6 +326,88 @@ intersection(array1, array2, array3); // => [2,3,4,5], because these items exist
 //helpers: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice#Array-like_objects
 
 
+/* Contains */
+
+// Returns true if the value is present in the list. 
+
+function contains(collection, targetItem){
+  //your code here!
+}
+
+//example:
+
+var myArray = [1, 2, 3];
+
+contains(myArray, 3); //=> true
+
+
+
+/* Flatten */
+
+// Takes a multidimensional array and converts it to a one-dimensional array.
+// The new array should contain all elements of the multidimensional array.
+// You will only receive arrays with one level of subarrays.
+
+function flatten(multiArray) {
+  // your code here!
+}
+
+//example:
+
+var deepArray = [[1,2,3], 4, 5, [6,7,8], 9, [10]] 
+flatten(deepArray); //=> [1,2,3,4,5,6,7,8,9,10]
+
+//extra credit:
+//Make your function recursive! Handle arrays that are nested an unknown number of times.
+
+//example:
+
+var crazyArray = [ [1, [2,3] ], [ 4,5, [6,7, [8] ], 9], [[[10]]]];
+
+flatten(crazyArray); //=> [1,2,3,4,5,6,7,8,9,10]
+
+/* Find Where */
+
+//Create a function that will looks through a given list and return
+//the first value that matches all of the key-value pairs listed in properties.
+//If no match is found, or if list is empty, undefined will be returned.
+
+function findWhere(collection, targetItem){
+  //your code here!
+}
+
+//example:
+var headlines = [
+  {
+    year: 1918, 
+    newsroom: "The New York Times",
+    headline: 'The Effect of Poverty on the Working Class'
+  },
+  {
+    year: 1922, 
+    newsroom: "The Boston Globe",
+    headline: 'Racism in Modern Politics'
+  },    
+  {
+    year: 1946, 
+    newsroom: "The Chicago Tribune",
+    headline: 'Flooding in Downtown Chicago'
+  },
+  {
+    year: 1959, 
+    newsroom: "The New York Times",
+    headline: 'Reported Crime for the Chelsea Neighborhood'
+  }
+];
+
+findWhere(headlines, {newsroom: "The New York Times"});
+/*
+=> {
+  year: 1918, 
+  newsroom: "The New York Times",
+  headline: 'The Effect of Poverty on the Working Class'
+}
+*/
 
 /* Pluck */
 
