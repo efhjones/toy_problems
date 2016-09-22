@@ -160,4 +160,4 @@ var movies = [
   {title: 'Die Hard', rating: 2}
 ];
 
-fiveStars(movies);//=> [{title: 'Amelie', rating: 5}, {title: 'Ratatouille', rating: 5}, ]
+fiveStars(movies);//=> [{title: 'Amelie', rating: 5}, {title: 'Ratatouille', rating: 5}]
