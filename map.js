@@ -129,13 +129,6 @@ function evenAndOdd(numberArray) {
 var numbers = [1,2,3,4,5,6];
 evenAndOdd(numbers); //=> ['odd', 'even', 'odd', 'even', 'odd', 'even'];
 
-//extra credit:
-  //Make it so that your function returns an array of arrays, one with all evens, and one with all odds.
-
-  //examples:
-  evenAndOdd(numbers); //=> [ [even, even, even], [odd, odd, odd] ]
-
-
 
 
 /* DoubleSubArrays */
