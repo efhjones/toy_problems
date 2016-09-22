@@ -427,7 +427,6 @@ pluck(myObjArray, 'age'); //=> [33, 32, 31]
 
 /* Extend */
 
-//Warning, this one is tough!
 //Create a function extend that will take in two objects.
 //The first should be the object you want to extend (or add
 //properites to) and the second object should contain all the
