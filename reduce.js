@@ -86,19 +86,15 @@ function addOneMore(collection) {
 
 /******************************* REDUCING WITH OBJECTS ********************************/
 
-//Reduce's startValue doesn't need to be a number! We can pass almost anything as a
-// startValue for reduce and make it work! For example, let's look at a use case with an
-//object:
+
+/* Make Me Obj */
+
+//Create a function that will, using reduce, translate the given array into an object,
+//whose keys correspond to each item in the array. You may give the object's keys 'true'
+//as a value.
 
 function makeMeObj(array){
-  return reduce(array, function(object, item){ // 'object' is really a variable that acts as a
-                                               // placeholder for our startValue. Since our startValue
-                                               // is an object, it makes sense to name this parameter
-                                               // 'object'.
-    object[item] = true; //this is where we add the key value pair to our object
-    return object; //be sure to return the object (startValue) at the end!
-                   //This is how we incrementally add thigs to our object!
-  }, {})
+  //your code here!
 }
 
 var fruits = ['apple', 'pear', 'banana', 'peach'];
