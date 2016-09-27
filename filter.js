@@ -161,3 +161,94 @@ var movies = [
 ];
 
 fiveStars(movies);//=> [{title: 'Amelie', rating: 5}, {title: 'Ratatouille', rating: 5}]
+
+
+//# Get Colors
+
+// Given an array of objects, iterate over the array with a loop or the filter method.
+// If the item's color is blue, add that item as an object to the array.
+// The key of the object should be the item's index, and the value should be the item's
+// color.
+
+function getColors(arrayOfObjs) {
+  //your code here!
+}
+
+//example:
+
+var closet = [
+  {item: "Jeans", color: "blue"}, 
+  {item: "Shoes", color: "red"}, 
+  {item: "Shirt", color: "blue"}, 
+  {item: "Belt", color: "brown"}
+];
+
+var result = getColors(closet);
+console.log(result);
+//=> [{item: "Jeans", color: "blue"}, , {item: "Shirt", color: "blue"}, ]
+
+
+
+//# Cats Cats Cats
+
+
+var catCollection = [
+  {
+    name: 'Maxie',
+    weight: '10lbs', 
+    gender: 'male',
+    colors: ['gray', 'white', 'brown']
+  },
+  {
+    name: 'Tabs',
+    weight: '8lbs',
+    gender: 'female',
+    colors: ['white', 'orange']
+  },
+  {
+    name: 'Friday',
+    weight: '9lbs',
+    gender: 'female',
+    colors: ['white', 'orange', 'black', 'brown']
+  },
+  {
+    name: 'Eisie',
+    weight: '13lbs',
+    gender: 'female',
+    colors: ['white', 'gray', 'tan']
+  },
+  {
+    name: 'Tinkerbell',
+    weight: '7lbs',
+    gender: 'female',
+    colors: ['white']
+  }
+];
+
+//Exercise 1: 
+//Create a function that will filter the given array of objects
+//for cats whose coloring includes orange.
+
+function orangeCats(array){
+  //your code here!
+};
+
+//example:
+var result = orangeCats(catCollection);
+console.log(result); //=> 
+/*
+[
+  {
+    name: 'Tabs',
+    weight: '8lbs',
+    gender: 'female',
+    colors: ['white', 'orange']
+  },
+  {
+    name: 'Friday',
+    weight: '9lbs',
+    gender: 'female',
+    colors: ['white', 'orange', 'black', 'brown']
+  }
+]
+*/
