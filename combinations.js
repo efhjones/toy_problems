@@ -121,7 +121,7 @@ var petStore = [
 //Exercise 3:
 //We'd like to begin adding cats to our database.
 //Create a function that will take in the parameters you see
-//in the object above, and add a new object to our array
+//in the object above, and add a new cat object to our pet store
 //following the same format as it appears within the array.
 //Your function should allow for any number of colors.
 
@@ -169,7 +169,14 @@ var petStore = [
     gender: 'female',
     colors: ['white'],
     adopted: false
-  },
+  },  
+  {
+    name: 'Fred',
+    weight: '20lbs',
+    gender: 'male',
+    colors: ['gray', 'white', 'brown'],
+    adopted: false
+  }
   {
     name: 'NyanCat',
     weight: '1lb',
