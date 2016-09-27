@@ -59,6 +59,9 @@ sumAllNumbers(numbers); //=> 15
 //Try using your function with 10 as its startValue.
 //Is the result what you expected? Why / why not?
 
+
+
+
 /* Add One More */
 
 //Create a function that, using reduce, will add an incrementing-by-one
@@ -332,9 +335,10 @@ function contains(collection, targetItem){
 
 //example:
 
-var myArray = [1, 2, 3];
+var myArray = [1, 2, 3, 4, 5];
 
 contains(myArray, 3); //=> true
+contains(myArray, 6); //=> false
 
 
 
