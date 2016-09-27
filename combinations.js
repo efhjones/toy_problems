@@ -130,7 +130,7 @@ function addCat(){
 }
 
 addCat('Fred', '20lbs', 'male', 'gray', 'white', 'brown');
-addCat('NyanCat', '1lb', 'female', 'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet');
+addCat('NyanCat', '1lb', 'unclear', 'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet');
 
 console.log(petStore);//=>
 /*
@@ -180,7 +180,7 @@ var petStore = [
   {
     name: 'NyanCat',
     weight: '1lb',
-    gender: 'female',
+    gender: 'unclear',
     colors: ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'],
     adopted: false
   }
