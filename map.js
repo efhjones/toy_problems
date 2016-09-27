@@ -151,6 +151,8 @@ doubleSubArrays(subArrays); //=> [ [2, 4, 6], [8, 10, 12], [14, 16, 18] ]
   //modify your function so that it accepts subarrays with strings. If the subarray contains a string,
   //add an s to the end of the string. Otherwise, double the number as usual.
 
+
+
 /* Average Age */ 
 
 
