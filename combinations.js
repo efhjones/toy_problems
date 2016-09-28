@@ -66,9 +66,10 @@ console.log(result); //=>
 //We need to add the ability to denote whether or not a cat 
 //has been adopted.
 //Create a function that will map through the given array, 
-//and add the property 'adopted' to each cat object.
+//and add the property 'adopted' to the cat object whose
+//name will be given in the parameters.
 
-function addAdoptions(array){
+function addAdoptions(array, catName){
   //your code here!
 }
 
@@ -185,5 +186,29 @@ var petStore = [
     adopted: false
   }
 ];
+
+*/
+
+//Exercise 4:
+//Now we want to see which of the cats in our database 
+//have been adopted.
+//Create a function that will organize our cats into
+//Two objects: Adopted and not adopted.
+
+function organizeCats(array) {
+  //your code here!
+}
+
+//example:
+addAdoptions(petStore, 'Fred');
+addAdoptions(petStore, 'Twinkie');
+addAdoptions(petStore, 'Eisie');
+var result = organizeCats(petStore);
+console.log(result);//=> 
+/*
+var result = {
+  adopted: ['Fred', 'Twinkie', 'Eisie'],
+  notAdopted: ['NyanCat', 'Tinkerbell', 'Tabs', 'Maxie']
+}
 
 */
