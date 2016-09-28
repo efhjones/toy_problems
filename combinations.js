@@ -36,14 +36,14 @@ var petStore = [
 
 //Exercise 1: 
 //Create a function that will filter the given array of objects
-//for cats whose coloring includes orange.
+//for cats whose coloring includes the given color.
 
-function orangeCats(array){
+function catColors(array, color){
   //your code here!
 };
 
 //example:
-var result = orangeCats(petStore);
+var result = catColors(petStore, 'orange');
 console.log(result); //=> 
 /*
 [
@@ -200,15 +200,84 @@ function organizeCats(array) {
 }
 
 //example:
+
 addAdoptions(petStore, 'Fred');
 addAdoptions(petStore, 'Twinkie');
 addAdoptions(petStore, 'Eisie');
+
 var result = organizeCats(petStore);
 console.log(result);//=> 
+
 /*
 var result = {
   adopted: ['Fred', 'Twinkie', 'Eisie'],
   notAdopted: ['NyanCat', 'Tinkerbell', 'Tabs', 'Maxie']
 }
 
+*/
+
+//Exercise 5:
+//Uh oh, looks like a naming system for our database isn't 
+//sufficient. We'd also like to add an id to each cat.
+//Write a function that will add an ID to each cat.
+//Keep in mind that no two IDs can be alike.
+//Once you've done that, adjust your addCat function 
+//so that it automatically assigns a new cat ID to 
+//each cat added.
+
+
+function addIDs(array) {
+  //your code here!
+}
+
+//example:
+
+addIDS(petStore);
+addCat('Jasper', '13lbs', 'male', 'black', 'white');
+console.log(petStore);//=>
+/*
+var petStore = [
+  {
+    name: 'Maxie',
+    weight: '10lbs', 
+    gender: 'male',
+    colors: ['gray', 'white', 'brown'],
+    ID: 1
+  },
+  {
+    name: 'Tabs',
+    weight: '8lbs',
+    gender: 'female',
+    colors: ['white', 'orange'],
+    ID: 2
+  },
+  {
+    name: 'Friday',
+    weight: '9lbs',
+    gender: 'female',
+    colors: ['white', 'orange', 'black', 'brown'],
+    ID: 3
+  },
+  {
+    name: 'Eisie',
+    weight: '13lbs',
+    gender: 'female',
+    colors: ['white', 'gray', 'tan'], 
+    ID: 4
+  },
+  {
+    name: 'Tinkerbell',
+    weight: '7lbs',
+    gender: 'female',
+    colors: ['white'],
+    ID: 5
+  },
+  {
+    name: 'Jasper;,
+    weight: '13lbs',
+    gender: 'male',
+    colors: ['black', 'white'],
+    ID: 6
+  }
+];
 */
