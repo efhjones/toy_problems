@@ -281,3 +281,79 @@ var petStore = [
   }
 ];
 */
+
+
+//Exercise 6:
+//Looks like some of our cats are overweight or underweight.
+//We'd like to promote the health of our felines,
+//so we need to know how much food to ration each cat.
+//If a cat is over 10lbs, the cat should get 1 cup daily.
+//If a cat is between 8 and 10lbs, 
+//the cat should get 1.2 cups daily.
+//If the cat is less than 8lbs, the cats should get
+//1.5 cups daily.
+
+//With this information, write a function that will
+//Tell us how much food each cat should get.
+
+function foodRations(array) {
+  //your code here!
+}
+
+//example:
+
+var result = foodRations(petStore);
+console.log(result);//=>
+/*
+
+var result = {
+  Maxie: {
+    ID: 1,
+    ration: 1.2 cups daily
+  },
+  Tabs: {
+    ID: 2,
+    ration: 1.2 cups daily
+  },
+  Friday: {
+    ID: 3,
+    ration: 1.2 cups daily
+  },
+  Eisie: {
+    ID: 4
+    ration: 1 cup daily
+  },
+  Tinkerbell: {
+    ID: 5,
+    ration: 1.5 cups daily
+  },
+  Jasper: {
+    ID: 6,
+    ration: 1 cup daily
+  }
+};
+
+*/
+
+
+//Exercise 6.5:
+//That's great, but let's get our data into a more readable
+//format. Create a function that will organize the data you
+//receive from foodRations into a result like this:
+
+function printRations(object) {
+  //your code here!
+}
+
+var result = printRations(petStore);//=>
+/*
+var result = [
+ 'Maxie: 1 cup daily',
+ 'Tabs: 1.2 cups daily',
+ 'Friday: 1.2 cups daily',
+ 'Eisie: 1 cup daily',
+ 'Tinkerbell: 1.5 cups daily',
+ 'Jasper: 1 cup daily'
+];
+
+*/
