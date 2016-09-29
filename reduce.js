@@ -167,6 +167,21 @@ var myObj = {0: 'banana', 1: 'grape', 2: 'peach', 3: 'apple', 4: 'pear', 5: 'str
 makeMeArray(myObj); //=> ['banana', 'grape', 'peach', 'apple', 'pear', 'strawberry']
 
 
+/* Object Keys */
+
+//Create a function that takes in an object and returns
+//an array of all those object's keys.
+
+function objectKeys(object) {
+  //your code here!
+}
+
+//example:
+
+var myObj = {name: 'Harry Potter', house: 'Gryffindor', sport: 'Quidditch', broom: 'Firebolt'};
+var keys = objectKeys(myObj); //=> ['name', 'house', 'sport', 'broom']
+
+
 /* Every */
 
 //Create a function every that takes in a collection and a predicate function (a callback
@@ -290,12 +305,13 @@ difference(array1, array2, array3); // => [1], because it is the only unique ite
 
 /* Intersection */
 
-// Takes an arbitrary number of arrays and produces an array that contains
+// Create a function that 
+// takes in three arrays and produces an array that contains
 // every item shared between all the passed-in arrays.
 // try to use your indexOf function here as well!
 
 
-function intersection () {
+function intersection (array1, array2, array3) {
   //your code here!
 };
 
