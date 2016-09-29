@@ -68,6 +68,10 @@ console.log(result); //=>
 //Create a function that will map through the given array, 
 //and add the property 'adopted' to the cat object whose
 //name will be given in the parameters.
+//For extra credit, allow for multiple cat names at once.
+//Take a look at this resource to determine how you might 
+//gather all the arguments passed to your function:
+//Resources: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice#Array-like_objects
 
 function addAdoptions(array, catName){
   //your code here!
@@ -75,7 +79,12 @@ function addAdoptions(array, catName){
 
 //example:
 
-addAdoptions(array);
+addAdoptions(array, 'Maxie');
+addAdoptions(array, 'Eisie');
+
+//extra credit:
+//addAdoptions(array, 'Maxie', 'Eisie');
+
 console.log(array); //=>
 /*
 
@@ -85,7 +94,7 @@ var petStore = [
     weight: '10lbs', 
     gender: 'male',
     colors: ['gray', 'white', 'brown'],
-    adopted: false
+    adopted: true
   },
   {
     name: 'Tabs',
@@ -106,7 +115,7 @@ var petStore = [
     weight: '13lbs',
     gender: 'female',
     colors: ['white', 'gray', 'tan'],
-    adopted: false
+    adopted: true
   },
   {
     name: 'Tinkerbell',
