@@ -47,7 +47,6 @@ addS(singles); //=> ['cats', 'birds', 'dogs', 'oranges', 'lemons', 'cakes']
 
 
 
-
 /* Add Prefix */
 
 //Create a function that, using map, iterates over an array of objects.
@@ -152,23 +151,3 @@ doubleSubArrays(subArrays); //=> [ [2, 4, 6], [8, 10, 12], [14, 16, 18] ]
   //add an s to the end of the string. Otherwise, double the number as usual.
 
 
-
-/* Average Age */ 
-
-
-// Create a function that will take in an array of objects
-// Each object will have an age property. You should return 
-// an int of the average ages of all the people.
-
-
-function averageAge(arrayOfObjs) {
-  //your code here!
-}
-
-//example:
-
-var people = [{name: "Liz", age: 35}, {name: "Jack", age: 55}, {name: "Kenneth", age: 30}, {name: "Tracy", age: 36}];
-var result = averageAge(people);
-console.log(result); //=> 39
-
-  
