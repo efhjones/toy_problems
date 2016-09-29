@@ -118,7 +118,20 @@ filterReduce(crazyNums); //=> after the filter function: [1, 2, 3, 4, 5]
                          //=> the final result: 15
 
 
+/* Only Uniques */ 
 
+// Create a function that, using filter, takes in a string
+// and produces a string that contains letters that appear 
+// only once in that string.
+
+
+var onlyUniques = function(str) {
+  // your code here!
+}
+
+//example:
+
+onlyUniques('bananas') // => 'bs'
 
 /* RecordAfterF */
 
