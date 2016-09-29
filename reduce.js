@@ -148,21 +148,6 @@ onlyAs(differentStrings); //=> 'apple aardvark alaska'
 
   onlyAs(differentStrings); //> ['apple, aardvark, alaska']
 
-/* Only Uniques */ 
-
-// Create a function that, using reduce, takes in a string
-// and produces a string that contains letters that appear 
-// only once in that string.
-
-
-var onlyUniques = function(str) {
-  // your code here!
-}
-
-//example:
-
-onlyUniques('bananas') // => 'bs'
-
 
 /* Object Values */
 
