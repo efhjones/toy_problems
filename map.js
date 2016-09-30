@@ -133,9 +133,8 @@ evenAndOdd(numbers); //=> ['odd', 'even', 'odd', 'even', 'odd', 'even'];
 /* DoubleSubArrays */
 
 //Create a function that will:
-//use each to iterate over an array of arrays
-  //at each index, use map to iterate over over the array held there and replace it with an array of 
-  //doubled values
+//use map to iterate over the array-of-arrays
+//and produce an array-of-arrays with all the values doubled
 
 function doubleSubArrays() {
   //your code here!
