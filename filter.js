@@ -201,6 +201,44 @@ console.log(result);
 //=> [{item: "Jeans", color: "blue"}, , {item: "Shirt", color: "blue"}, ]
 
 
+//#GPAs
+
+//Given an array of objects, iterate over the items and return
+//only those students' names whose average GPA is greater than 3.0
+
+function highGPAs(array) {
+  //your code here!
+}
+
+//example:
+
+var students = [
+  { name: 'Louis',
+    classes: ['English', 'Spanish', 'Algebra', 'Chemistry'],
+    grades: [3.0, 4.0, 2.5, 3.4]
+  },
+  { name: 'Felicity',
+    classes: ['German', 'French', 'Calculus', 'Genetics'],
+    grades: [3.2, 2.7, 2.5, 2.8]
+  },
+  { name: 'Graham',
+    classes: ['Javascript', 'Chemistry', 'Calculus', 'French'],
+    grades: [3.2, 2.7, 3.4, 3.4]
+  },
+  { name: 'Adam',
+    classes: ['German', 'Spanish', 'Calculus', 'Javascript'],
+    grades: [2.6, 2.7, 3.4, 3.1]
+  },
+  { name: 'Grace',
+    classes: ['Algebra', 'French', 'Javascript', 'German'],
+    grades: [4.0, 3.8, 3.6, 3.8]
+  }
+];
+
+var result = highGPAs(students);
+console.log(result); //=> [Grace, Graham, Louis]
+
+
 
 //# Cats Cats Cats
 
