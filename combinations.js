@@ -366,3 +366,48 @@ var result = [
 ];
 
 */
+
+//Exercise 7:
+//Add a bit more functionality to your foodRations function.
+//Your function should be able to handle both an array, 
+//or a specific cat. If foodRations('Eisie') is entered, 
+//your function should return just the food rations for Eisie
+//(you may use your printRations function to handle this task).
+//However, if there is no argument or if the argument is an
+//array, your foodRations function should return the whole result
+//as usual. 
+
+//Example:
+
+var result = foodRations('Eisie'); //=> result = ['Eisie: 1 cup daily']
+var result2 = foodRations();//=> 
+/*
+
+var result = {
+  Maxie: {
+    ID: 1,
+    ration: 1.2 cups daily
+  },
+  Tabs: {
+    ID: 2,
+    ration: 1.2 cups daily
+  },
+  Friday: {
+    ID: 3,
+    ration: 1.2 cups daily
+  },
+  Eisie: {
+    ID: 4
+    ration: 1 cup daily
+  },
+  Tinkerbell: {
+    ID: 5,
+    ration: 1.5 cups daily
+  },
+  Jasper: {
+    ID: 6,
+    ration: 1 cup daily
+  }
+};
+
+*/
