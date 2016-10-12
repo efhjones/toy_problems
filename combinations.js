@@ -251,6 +251,7 @@ var petStore = [
     weight: '10lbs', 
     gender: 'male',
     colors: ['gray', 'white', 'brown'],
+    adopted: false,
     ID: 1
   },
   {
@@ -258,6 +259,7 @@ var petStore = [
     weight: '8lbs',
     gender: 'female',
     colors: ['white', 'orange'],
+    adopted: false,
     ID: 2
   },
   {
@@ -265,13 +267,15 @@ var petStore = [
     weight: '9lbs',
     gender: 'female',
     colors: ['white', 'orange', 'black', 'brown'],
+    adopted: false,
     ID: 3
   },
   {
     name: 'Eisie',
     weight: '13lbs',
     gender: 'female',
-    colors: ['white', 'gray', 'tan'], 
+    colors: ['white', 'gray', 'tan'],
+    adopted: false,     
     ID: 4
   },
   {
@@ -279,6 +283,7 @@ var petStore = [
     weight: '7lbs',
     gender: 'female',
     colors: ['white'],
+    adopted: false,    
     ID: 5
   },
   {
@@ -286,6 +291,7 @@ var petStore = [
     weight: '13lbs',
     gender: 'male',
     colors: ['black', 'white'],
+    adopted: false,    
     ID: 6
   }
 ];
